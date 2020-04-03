@@ -8,7 +8,7 @@
 import java.util.*;
 
 class Day3 {
-    public int maxSubArray(int[] nums) {
+    public static int maxSubArray(int[] nums) {
         int maxSum = Integer.MIN_VALUE;
         int windowSum = 0;
         for (int i : nums) {
@@ -19,5 +19,10 @@ class Day3 {
             maxSum = Math.max(maxSum, windowSum);
         }
         return maxSum;
+    }
+
+    public static void main(String[] args) {
+        int[] ar = { -1, -2 };
+        maxSubArray(ar);
     }
 }
