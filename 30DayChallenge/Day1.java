@@ -35,6 +35,15 @@ class Day1 {
             }
         }
 
+        for (int i : nums) {
+            if (!table.keySet().contains(i))
+                table.put(i, 1);
+            else {
+                count = table.get(i);
+                table.put(i, ++count);
+            }
+        }
+
         /*
          * gets the value of the hash by using the keys and looping //though them. If
          * the value is equal to 1 then that means that that number is the single
