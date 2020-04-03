@@ -14,16 +14,15 @@ import java.util.*;
 class Day2 {
 
     // finds the sum of the squares of a number
-    public int number(int n) {
+    public static int number(int n) {
         int tempSum = 0;
-        int power = 0;
+
         int temp = 0;
         String c = String.valueOf(n);
 
         for (int i = 0; i < c.length(); i++) {
             temp = Integer.parseInt(String.valueOf(c.charAt(i)));
-            power = temp * temp;
-            tempSum += power;
+            tempSum += (temp * temp);
         }
         return tempSum;
     }
@@ -33,7 +32,7 @@ class Day2 {
      * 4 then we cannot continue because 4 is a not part of the loop condition since
      * it is not a happy number.
      */
-    public boolean isHappy(int n) {
+    public static boolean isHappy(int n) {
 
         while (n != 1 && n != 4) {
             n = number(n);
@@ -46,7 +45,7 @@ class Day2 {
     }
 
     public static void main(String[] args) {
-
+        System.out.print(isHappy(4));
     }
 
 }
