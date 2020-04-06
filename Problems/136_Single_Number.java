@@ -16,7 +16,7 @@
 
 import java.util.*;
 
-class Day1 {
+class Solution {
 
     public int singleNumber(int[] nums) {
         // create a hashtable that accepts an int as key and an int as value
