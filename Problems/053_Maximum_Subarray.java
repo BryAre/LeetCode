@@ -7,7 +7,7 @@
 
 import java.util.*;
 
-class Day3 {
+class Solution {
     public static int maxSubArray(int[] nums) {
         int maxSum = Integer.MIN_VALUE;
         int windowSum = 0;
