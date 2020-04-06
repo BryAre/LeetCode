@@ -11,7 +11,7 @@ import java.util.*;
  * 
  */
 
-class Day2 {
+class Solution {
 
     // finds the sum of the squares of a number
     public static int number(int n) {
