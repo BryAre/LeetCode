@@ -1,5 +1,6 @@
 
 /**
+ * This problem is a newly uploaded problem on the leetcode platform.
  * Given an integer array arr, count element x such that x + 1 is also in arr.
  *
  * If there're duplicates in arr, count them seperately.
@@ -7,7 +8,7 @@
 
 import java.util.*;
 
-class Day7 {
+class Solution {
     public int countElements(int[] arr) {
         Set<Integer> numbers = new HashSet<>(); // create a hashset which stores all numbers and no duplicates
 
@@ -28,7 +29,7 @@ class Day7 {
 
     public static void main(String[] args) {
         int[] ar = { 1, 1, 2, 2, 3, 3, 5 };
-        Day7 d = new Day7();
+        Solution d = new Solution();
         System.out.print(d.countElements(ar));
     }
 }
